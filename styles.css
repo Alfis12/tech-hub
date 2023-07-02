@@ -1,0 +1,301 @@
+/* Reset styles to normalize browser differences */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set default font family and size */
+body {
+  font-family: 'poppins', sans-serif;
+  /* font-size: 16px; */
+}
+
+/* Style the header */
+header {
+  background-image: url('images/image2.jpg');
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 20); /* 50% transparent black */
+  background-position: center;
+  /* color: #fff; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: #fdfafa;
+  padding: 30px;
+}
+
+header h1 {
+  font-size: 80px;
+  margin-bottom: 180px;
+  font-weight: 500;
+}
+
+header p {
+  font-size: 1.37rem;
+}
+header a.octa {
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 60px;
+  transition: all 0.2s;
+  margin-top: 1rem;
+}
+
+header button:hover {
+  background-color: #3e8e41;
+}
+
+
+
+/* Style the navigation menu */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 7%;
+}
+nav img{
+  height: 50px;
+  width: 100px;
+}
+.navcontent {
+  margin: 10px 30%;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+background-color: #fff;
+color: black;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #FFFFFF;
+  color: #0055FF;
+}
+
+/* Style the company name and tagline */
+h1 {
+  font-size: 36px;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+
+
+/* Style the services section */
+
+#services {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.service {
+  flex-basis: calc(33.33% - 40px);
+  margin: 20px 20px 3px 4px;
+  text-align: center;
+}
+
+.service img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.service h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+
+/* Style the about us section */
+/* #about {
+  background-color: #FFFFFF;
+  padding: 50px;
+} */
+#about {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+#about .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+#about a.btn-primary {
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  background-color: #007bff;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+#about a.btn-primary:hover {
+  background-color: #0062cc;
+}
+
+
+a[href="#services"]:hover, a[href="#about"]:hover, a[href="#contact"]:hover {
+  background-color: #FFFFFF;
+  color: #0055FF;
+}
+
+#about{
+  padding: 50px 8%;
+  line-height: 30px;
+}
+
+#about img{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* Style the contact us section */
+#contact {
+background-color: #e6e3e3;
+color: #333;
+padding: 50px;
+}
+
+form {
+margin-top: 30px;
+}
+
+label {
+display: block;
+margin-bottom: 10px;
+font-size: 24px;
+}
+
+input[type="text"], input[type="email"], textarea {
+padding: 10px;
+font-size: 18px;
+width: 100%;
+margin-bottom: 20px;
+border: 2px solid black;
+border-radius: 5px;
+}
+
+input[type="submit"] {
+background-color: #fff;
+color: #333;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+}
+
+input[type="submit"]:hover {
+background-color: #171452;
+color: white;
+}
+
+
+ /* Media queries for smaller screens */
+@media (max-width: 768px) {
+
+  /* Reduce header font size and margin */
+  header h1 {
+    font-size: 60px;
+    margin-bottom: 120px;
+  }
+
+  /* Reduce services section margin */
+  #services {
+    margin-top: 30px;
+  }
+
+  .services-container {
+    margin-top: 20px;
+  }
+
+  /* Adjust service card size */
+  .service {
+    flex-basis: calc(50% - 20px);
+    margin: 20px 0;
+  }
+
+}
+
+/* Media queries for even smaller screens */
+@media (max-width: 480px) {
+
+  /* Reduce header font size and margin */
+  header h1 {
+    font-size: 48px;
+    margin-bottom: 90px;
+  }
+
+  /* Adjust service card size */
+  .service {
+    flex-basis: calc(100% - 20px);
+    margin: 20px 0;
+  }
+
+}
+
+
+
+
